@@ -94,7 +94,7 @@ public class GioHangChiTietServiceImpl implements GioHangChiTietService {
         hoaDon.setQuanHuyen(quanHuyenID);
         hoaDon.setThanhPho(thanhPhoID);
         hoaDon.setVoucher(Voucher.builder().id(Long.valueOf(voucher)).build());
-        
+
         repositoryHoaDon.save(hoaDon);
 
         hoaDon.setMaHoaDon("HĐ" + hoaDon.getId());
